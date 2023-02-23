@@ -233,11 +233,11 @@ class nuScenesDataset(Dataset):
                 if self.nusc_split != "test":
                     labels = self.load_fg_labels(curr_sd_token).astype(np.float32)[np.logical_not(ego_mask)]
                 else:
-                    labels = np.full((0,), -1, dtype=np.float32)
+                    labels = np.full((len(points_tf),), -1, dtype=np.float32)
             else:  # filler
                 origin_tf = np.array([0.0, 0.0, 0.0], dtype=np.float32)
                 points_tf = np.full((0, 3), float("nan"), dtype=np.float32)
-                labels = np.full((0,), -1, dtype=np.float32)
+                labels = np.full((len(points_tf),), -1, dtype=np.float32)
 
             #
             assert len(labels) == len(points_tf)
