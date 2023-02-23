@@ -17,6 +17,7 @@ If you find our work useful, please consider citing:
 ## Setup
 - Download [nuScenes](https://www.nuscenes.org/nuscenes#download), [KITTI-Odometry](http://www.semantic-kitti.org/dataset.html#download) and [ArgoVerse2.0](https://www.argoverse.org/av2.html#download-link) (code supports the LiDAR dataset, but the change to Sensor dataset is minor). (Tip: See the python scripts to see how to send the file paths.)
 - Create a conda environment with the given `environment.yml`. Additionally, install the `chamferdist` package given inside `utils/chamferdist` by navigating to that directory and doing `pip install .`.
+- All trained model checkpoints for all three datasets for both 1s and 3s forecasting are available in the `models/` folder.
 - The given code has been tested with python3.8, CUDA-11.1.1, CuDNN-v8.0.4.30, GCC-5.5 and NVIDIA GeForce RTX 3090.
 
 ## Training
