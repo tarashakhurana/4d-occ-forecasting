@@ -1,0 +1,20 @@
+{
+    "dataset": "kitti",
+    "kitti_root": "/data3/tkhurana/datasets/semantic-kitti/dataset/",
+    "kitti_cfg": "configs/semantic-kitti.yaml",
+    "pc_range": [
+        -70.0,
+        -70.0,
+        -4.5,
+        70.0,
+        70.0,
+        4.5
+    ],
+    "voxel_size": 0.2,
+    "n_input": 5,
+    "input_step": 6,
+    "n_output": 5,
+    "output_step": 6,
+    "batch_size": 8,
+    "num_workers": 8
+}

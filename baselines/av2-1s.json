@@ -1,0 +1,19 @@
+{
+    "dataset": "argoverse2",
+    "argo_root": "/data3/shared/datasets/ArgoVerse2/LiDAR/",
+    "pc_range": [
+        -70.0,
+        -70.0,
+        -4.5,
+        70.0,
+        70.0,
+        4.5
+    ],
+    "voxel_size": 0.2,
+    "n_input": 5,
+    "input_step": 2,
+    "n_output": 5,
+    "output_step": 2,
+    "batch_size": 8,
+    "num_workers": 8
+}

@@ -1,0 +1,21 @@
+{
+    "dataset": "nuscenes",
+    "nusc_root": "/data3/tkhurana/datasets/nuScenes",
+    "nusc_version": "v1.0-trainval",
+    "pc_range": [
+        -70.0,
+        -70.0,
+        -4.5,
+        70.0,
+        70.0,
+        4.5
+    ],
+    "voxel_size": 0.2,
+    "n_input": 6,
+    "input_step": 1,
+    "n_output": 6,
+    "output_step": 10,
+    "subsample": 4000,
+    "batch_size": 8,
+    "num_workers": 8
+}
