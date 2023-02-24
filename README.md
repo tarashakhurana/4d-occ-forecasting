@@ -5,7 +5,7 @@ By Tarasha Khurana\*, Peiyun Hu\*, David Held, and Deva Ramanan
 
 \* equal contribution
 
-[project page](https://www.cs.cmu.edu/~tkhurana/ff4d/index.html) | [5-min summary]()
+[project page](https://www.cs.cmu.edu/~tkhurana/ff4d/index.html) | [5-min summary](https://youtu.be/v9rmkYEYmh8)
 
 ## Citing us
 If you find our work useful, please consider citing:
