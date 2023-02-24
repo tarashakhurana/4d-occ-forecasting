@@ -2,7 +2,10 @@
 
 # Point Cloud Forecasting as a Proxy for 4D Occupancy Forecasting
 By Tarasha Khurana\*, Peiyun Hu\*, David Held, and Deva Ramanan
+
 \* equal contribution
+
+[project page](https://www.cs.cmu.edu/~tkhurana/ff4d/index.html) | [5-min summary]()
 
 ## Citing us
 If you find our work useful, please consider citing:
@@ -32,5 +35,5 @@ The ray tracing baseline is implemented and evaluated by `raytracing_baseline.sh
 ## Cross-sensor generalization
 In order to test a model trained on X on a dataset other than X, change the `dataset` field in the respective model's config.
 
-##Acknowledgments
+## Acknowledgments
 The `chamferdist` package shipped with this codebase is a version of [this](https://github.com/krrish94/chamferdist) package. Voxel rendering is an adaptation of the raycasting in [our](https://github.com/tarashakhurana/emergent-occ-forecasting) previous work.
