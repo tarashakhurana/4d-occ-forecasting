@@ -12,7 +12,7 @@ an additional package called `evalai` should be install via `pip`.
 
 Creates the groundtruth annotations JSON file in the format stored
 by the Eval AI server. Change the dataset split to `val` in order to test your validation
-results. Current evaluation is supported on a randomly selected 10% subset of points from
+results. Current evaluation is supported on a randomly selected 20% subset of points from
 each point cloud.
 
 The format of the groundtruth JSON file is as follows:
@@ -26,4 +26,19 @@ performance on the validation set. Current script generates a random 10% subset 
 point cloud.
 
 The format of the JSON is as follows:
+```
+```
+
+## ```load_sequences.py```
+
+Sample script to demonstrate the use of the data loader.
+
+
+## ```evaluate.py```
+
+Script to compute the metrics in the CVPR '23 paper and the leaderboard for the 4D occupancy forecasting
+challenge. Usage: ```python evaluate.py <groundtruth file path> <submission file path>```.
+
+
+
 
