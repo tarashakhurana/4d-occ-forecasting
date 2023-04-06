@@ -6,7 +6,7 @@ at the CVPR 2023 Workshop on Autonomous Driving.
 ## Installation
 
 This evaluation kit only requires the environment in the parent repository. For submission onto EvalAI,
-an additional package called `evalai` should be install via `pip`.
+an additional package called `evalai` should be installed via `pip`.
 
 ## ```generate_groundtruth.py```
 
