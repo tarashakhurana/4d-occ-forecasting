@@ -31,7 +31,8 @@ The format of the groundtruth JSON file is as follows:
                     '<frame_id>': List[List[List]],
                     '<frame_id>': List[List[List]]
                     ...
-                }
+                },
+                ...
             }
         }
     ]
