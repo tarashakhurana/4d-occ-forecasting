@@ -46,7 +46,7 @@ Here, the List at the last level is a list of length 7 which stores the origin (
 ## ```generate_query_rays.py```
 
 Creates a set of query rays in a JSON file. Change the dataset split to `val` in order to test your
-performance on the validation set. Current script generates a random 10% subset of points from each
+performance on the validation set. Current script generates a random 20% subset of points from each
 point cloud.
 
 The format of the JSON is as follows:
