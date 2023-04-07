@@ -39,7 +39,12 @@ The format of the groundtruth JSON file is as follows:
 }
 ```
 
-Here, the List at the last level is a list of length 7 which stores the origin (`ox`, `oy`, `oz`), unit direction
+Each '<log_id>' is a string identifier of a particular log in the Argoverse 2 Sensor suite.
+Each '<frame_id>' is the current (or 0th) timestep of the 6s sequence at hand. 
+3s of past is taken as input and the next 3s are to be forecasted.
+Each '<frame_id>' stores the list of points in every future timestep (there are 5 future timesteps).
+The number of points at each timestep can be different. Here, the List at the last level is a list of 
+length 7 which stores the origin (`ox`, `oy`, `oz`), unit direction
 (`dx`, `dy`, `dz`), and the expected depth along this ray (`d`).
 
 
@@ -72,6 +77,11 @@ The format of the JSON is as follows:
 }
 ```
 
+Each '<log_id>' is a string identifier of a particular log in the Argoverse 2 Sensor suite.
+Each '<frame_id>' is the current (or 0th) timestep of the 6s sequence at hand. 
+3s of past is taken as input and the next 3s are to be forecasted.
+Each '<frame_id>' stores the list of points in every future timestep (there are 5 future timesteps).
+The number of points at each timestep can be different. 
 Here, the List at the last level is a list of length 6 which stores the origin (`ox`, `oy`, `oz`) and unit direction
 (`dx`, `dy`, `dz`). When making a submission to the Eval AI server, you will replace this list of length 6, with a list
 of length 1 which will store the expected depth along this ray, `d`.
