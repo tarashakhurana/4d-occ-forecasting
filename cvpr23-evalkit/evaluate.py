@@ -68,7 +68,7 @@ def compute_chamferdistance(gt_pcd, pred_pcd):
 
 
 
-def evaluate_submission(
+def evaluate(
         annotation_file: str, submission_file: str) -> Dict[str, Any]:
     print("Starting Evaluation.....")
 
