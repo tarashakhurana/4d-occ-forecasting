@@ -81,8 +81,8 @@ def generate_and_save(args):
                     points_t  = points[tindex == t]
                     origin_t  = np.repeat(origin[t][None, :], points_t.shape[0], axis=0)
                     direction = points_t - origin_t
-                    unit_direction = direction / np.linalg.norm(direction)
-                    groundtruth = np.linalg.norm(direction, axis=-1)[..., None]
+                    unit_direction = direction / np.sqrt((direction ** 2).sum(axis=1, keepdims=True))
+                    groundtruth = np.sqrt((direction ** 2).sum(axis=1, keepdims=True))
                     origin_direction = np.hstack((origin_t, unit_direction, groundtruth)).astype(float)
                     num_points = origin_direction.shape[0]
                     origin_direction_subsampled = origin_direction[::5, ...]
