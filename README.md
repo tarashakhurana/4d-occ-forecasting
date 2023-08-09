@@ -24,7 +24,25 @@ If you find our work useful, please consider citing:
 - All trained model checkpoints for all three datasets for both 1s and 3s forecasting are available in the `models/` folder.
 - The given code has been tested with python3.8, CUDA-11.1.1, CuDNN-v8.0.4.30, GCC-5.5 and NVIDIA GeForce RTX 3090.
 
-## :new: CVPR '23 Argoverse challenge evalkit released!
+## :new: Differentiable Voxel Rendering implemented as a layer in PyTorch
+The original code supported training with only L1, L2, or AbsRel losses. For increased flexibility in the choice of loss, we have added differentiable voxel rendering as a layer in PyTorch. Note that we do not use it ourselves, because it incurs a huge memory footprint (as gradients for the entire voxel grid are now retained in memory).
+
+You can import the layer with:
+
+```from utils.layers.differentiable_voxel_rendering import DifferentiableVoxelRendering```
+
+This layer is expected to be used (without any initialization) in `model.py` in place of `dvr.render` and `dvr.render_forward` like below:
+
+```
+pred_dist, gt_dist = DifferentiableVoxelRendering(
+                        sigma,
+                        output_origin,
+                        output_points,
+                        output_tindex
+                     )
+```
+
+## CVPR '23 Argoverse challenge evalkit released!
 If participating in the CVPR '23 Argoverse2.0 4D Occupancy Forecasting challenge, please see the [eval-kit](./cvpr23-evalkit).
 
 ## Training
