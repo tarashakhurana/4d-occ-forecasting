@@ -69,7 +69,7 @@ class Argoverse2Dataset(Dataset):
             start_index = len(self.filenames)
             # if len(velo_names) < (self.n_input * self.input_step + self.n_output * self.output_step * 2):
             #     continue
-            for idx in range(0, len(velo_names), self.input_step + self.output_step):
+            for idx in range(0, len(velo_names), self.input_step):
                 velo_name = velo_names[idx]
                 self.sequences.append(log_id)
                 self.filenames.append(velo_name)
